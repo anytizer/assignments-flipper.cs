@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Flipper));
             textBox1 = new TextBox();
             button1 = new Button();
             button2 = new Button();
@@ -72,7 +73,7 @@
             label1.Text = "this.textBox1.Text = dto.name; // flip it!";
             label1.Click += label1_Click;
             // 
-            // Form1
+            // Flipper
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -82,9 +83,10 @@
             Controls.Add(button1);
             Controls.Add(textBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "Form1";
+            Name = "Flipper";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Flip Assignments";
             ResumeLayout(false);
